@@ -20,5 +20,6 @@ from editform import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('question/create', views.createaform),
+    path('',include('userlogin.urls')),
+    path('question/updateform', views.updateform),
 ]
